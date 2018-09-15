@@ -1,0 +1,52 @@
+
+
+.layout {
+	display: grid;
+
+	@media (max-width: 800px) {
+		grid-template-areas: 
+			"logo"
+			"menu"
+			"content";
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 64px 1fr;
+	}
+
+	@media (min-width: 800px) {
+		grid-template-areas: 
+			"logo menu"
+			"content content";
+		grid-template-columns: 400px 1fr;
+		grid-template-rows: 100px 1fr;
+	}
+
+
+	&__logo {
+		grid-area: logo;
+
+		display: flex;
+		align-items: center;
+
+		background-image: url('../images/logo.png');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 100px auto;
+		padding: 4px 4px 4px 100px;
+
+		font-family: Verdana, Tahoma, Arial, mono;
+		font-size: 24pt;
+	}
+
+	&__menu {
+		grid-area: menu;
+
+		align-items: center;
+		display: flex;
+
+	}
+
+	&__content {
+		grid-area: content;
+
+	}
+}

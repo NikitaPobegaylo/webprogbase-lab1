@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+}
+.menu__item {
+  margin: 0 4px;
+}
+.menu__item:not(:first-child):before {
+  content: " | ";
+}
+.menu__link {
+  text-decoration: none;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}

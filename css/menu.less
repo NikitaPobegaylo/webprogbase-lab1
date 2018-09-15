@@ -1,0 +1,22 @@
+.menu {
+	display: flex;
+
+	&__item {
+		margin: 0 4px;
+
+		&:not(:first-child):before {
+			content: " | "
+		}
+	}
+	
+	&__link {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+
+}
+

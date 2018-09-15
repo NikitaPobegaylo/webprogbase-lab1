@@ -1,0 +1,35 @@
+.users {
+  border-collapse: collapse;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+}
+.users th,
+.users td {
+  border: 1px solid grey;
+  padding: 2px 6px;
+}
+.users__head {
+  font-weight: bold;
+}
+.users__login {
+  width: 200px;
+}
+.users__fullname {
+  width: 400px;
+}
+.users__body:nth-child(2n) {
+  background-color: #EEE;
+}
+.users__body:hover {
+  background-color: #999;
+}
+.users__link {
+  text-decoration: none;
+}
+.users__link:hover {
+  text-decoration: underline;
+}
+.users__time {
+  font-style: italic;
+}

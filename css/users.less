@@ -1,0 +1,52 @@
+.users {
+	border-collapse: collapse;
+	line-height: 1.5;
+	text-align: left;
+	width: 100%;
+
+	th, td {
+		border: 1px solid grey;
+		padding: 2px 6px;
+	}
+
+	&__head {
+		font-weight: bold;
+	}
+	
+	&__login {
+		width: 200px;
+	}
+	
+	&__fullname {
+		width: 400px;
+	}
+
+	&__registered {
+
+	}
+
+	&__body {
+
+		&:nth-child(2n) {
+			background-color: #EEE;
+		}
+
+
+		&:hover {
+			background-color: #999;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__time {
+		font-style: italic;
+	}
+
+}
